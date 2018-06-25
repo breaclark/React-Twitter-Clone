@@ -3,7 +3,7 @@ import User from "./User";
 
 function LeftBar(){
   return (
-    <div>
+    <div className="left-bar">
       <User />
     </div>
   );
