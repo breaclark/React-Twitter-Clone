@@ -1,11 +1,11 @@
 import React from "react";
 
-function TweetBlock(){
+function TweetBlock(props){
   return (
     <div className="tweet-block">
-      <p>Tweet thang</p>
+      <p>{props.userName}</p>
       <img src={require("./assets/girl.jpg")} alt="girl"/>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+      <p>{props.tweetText}</p>
     </div>
   );
 }
