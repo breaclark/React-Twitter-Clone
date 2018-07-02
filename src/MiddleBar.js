@@ -7,7 +7,7 @@ import boy from './assets/boy.jpg';
 function MiddleBar(props){
   return (
     <div className="middleBar">
-      { props.tweetList.map((propBlock, index) =>
+      { props.tweetList.slice().reverse().map((propBlock, index) =>
           <TweetBlock userName={propBlock.userName}
             img={propBlock.img} tweetText={propBlock.tweetText}
             key={index}/>
