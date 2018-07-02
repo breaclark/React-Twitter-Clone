@@ -4,17 +4,43 @@ import Notifications from "./Notifications";
 import Messages from "./Messages";
 import Searchbar from "./Searchbar";
 import TweetButton from "./TweetButton";
+import TweetForm from "./TweetForm";
 
-function Header(){
-  return (
-    <div className="header">
-      <Home />
-      <Notifications />
-      <Messages />
-      <Searchbar />
-      <TweetButton />
-    </div>
-  );
+class Header extends React.Component {
+
+  constructor (props) {
+    super(props);
+    this.state = {
+      tweetButtonPushed: false
+    };
+    this.handleTweetButtonPush = this.handleTweetButtonPush.bind(this);
+  }
+
+  handleTweetButtonPush() {
+    this.setState({tweetButtonPushed: true});
+  }
+
+  render() {
+    let tweetForm = null;
+    if(this.state.tweetButtonPushed) {
+      tweetForm = <TweetForm />;
+    }
+    return (
+      <div>
+        <div className="header">
+          <Home />
+          <Notifications />
+          <Messages />
+          <Searchbar />
+          <TweetButton onTweetButtonPush={this.handleTweetButtonPush}/>
+        </div>
+        <div>
+          {tweetForm}
+        </div>
+      </div>
+    );
+  }
+
 }
 
 export default Header;

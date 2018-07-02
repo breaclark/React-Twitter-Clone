@@ -3,8 +3,16 @@ import React from "react";
 function TweetBlock(props){
   return (
     <div className="tweet-block">
+      <style jsx>{`
+          img {
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+      `}</style>
       <p>{props.userName}</p>
-      <img src={require("./assets/girl.jpg")} alt="girl"/>
+      <img src={props.img} alt="person"/>
       <p>{props.tweetText}</p>
     </div>
   );
