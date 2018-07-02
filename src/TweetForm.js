@@ -2,28 +2,27 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 class TweetForm extends React.Component {
-  let _tweet = null;
 
   constructor(props) {
     super(props);
+    let _tweet = null;
+    this.handleNewTweet = this.handleNewTweet.bind(this);
   }
 
-  function handleNewTweet (event) {
+  handleNewTweet (event) {
     event.preventDefault();
-    props.onNewTweetCreation({
-      tweettext: _tweet.value
-    });
-    _tweet.value = '';
+    this.props.onNewTweetCreation(this._tweet.value);
+    this._tweet.value = '';
   }
 
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleNewTweet}>
           <input
           id="tweet"
           placeholder="What's on your mind"
-          ref={(input) => {_tweet = input;}}/>
+          ref={(input) => {this._tweet = input;}}/>
           <button type="submit">Tweet!</button>
         </form>
       </div>

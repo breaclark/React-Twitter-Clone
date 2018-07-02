@@ -14,6 +14,7 @@ class Header extends React.Component {
       tweetButtonPushed: false
     };
     this.handleTweetButtonPush = this.handleTweetButtonPush.bind(this);
+    this.addNewTweet = this.addNewTweet.bind(this);
   }
 
   handleTweetButtonPush() {
@@ -21,7 +22,7 @@ class Header extends React.Component {
   }
 
   addNewTweet(newTweet) {
-    
+    this.props.pushTweetUpToList(newTweet);
   }
 
   render() {

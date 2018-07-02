@@ -3,11 +3,11 @@ import LeftBar from "./LeftBar";
 import MiddleBar from "./MiddleBar";
 import RightBar from "./RightBar";
 
-function MainContent(){
+function MainContent(props){
   return (
     <div className="main-content">
       <LeftBar />
-      <MiddleBar />
+      <MiddleBar tweetList={props.tweetList}/>
       <RightBar />
     </div>
   );
