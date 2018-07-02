@@ -1,8 +1,5 @@
 import React from "react";
 import TweetBlock from "./TweetBlock";
-import girl2 from './assets/girl-2.jpg';
-import man from './assets/man.jpg';
-import boy from './assets/boy.jpg';
 
 function MiddleBar(props){
   return (

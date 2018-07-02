@@ -15,7 +15,7 @@ class App extends Component {
       username: "Brea B",
       img: girl,
       tagline: "It's like ch-ch-ch-chia with a br",
-      about: "You have probably made a resume before, but likely it will need some updates to account for the coding skills you've recently learned. Please come to our meeting with your resume as prepared as possible given the parameters we lay out. If you choose to diverge from these, let me know your reasoning, and I’m more than happy to talk about alternate formats. These aren’t meant to be strict rules, but good general guidelines that will work well in most cases.",
+      about: "You have probably made a resume before, but likely it will need some updates to account for the coding skills you've recently learned.",
       masterTweetList: [
         {
           "userName" : "Henry",

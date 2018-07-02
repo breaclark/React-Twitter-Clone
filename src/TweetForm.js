@@ -5,7 +5,7 @@ class TweetForm extends React.Component {
 
   constructor(props) {
     super(props);
-    let _tweet = null;
+    this._tweet = null;
     this.handleNewTweet = this.handleNewTweet.bind(this);
   }
 

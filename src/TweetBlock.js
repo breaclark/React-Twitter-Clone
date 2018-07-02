@@ -3,7 +3,7 @@ import React from "react";
 function TweetBlock(props){
   return (
     <div className="tweet-block">
-      <style jsx>{`
+      <style>{`
           img {
             height: 100px;
             width: 100px;
