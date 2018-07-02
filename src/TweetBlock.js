@@ -21,6 +21,7 @@ function TweetBlock(props){
           }
           p {
             margin-left: 20px;
+            word-break: break-word;
           }
       `}</style>
       <div className="tweet-block-left">
