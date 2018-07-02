@@ -6,7 +6,11 @@ import RightBar from "./RightBar";
 function MainContent(props){
   return (
     <div className="main-content">
-      <LeftBar />
+      <LeftBar
+        username={props.username}
+        img={props.img}
+        tagline={props.tagline}
+        about={props.about} />
       <MiddleBar tweetList={props.tweetList}/>
       <RightBar />
     </div>
