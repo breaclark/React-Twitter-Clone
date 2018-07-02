@@ -4,6 +4,11 @@ import Header from "./Header";
 import MainContent from "./MainContent";
 
 class App extends Component {
+
+  pushTweetToList() {
+    
+  }
+
   render() {
     return (
       <div className="App">

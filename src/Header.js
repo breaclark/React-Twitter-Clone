@@ -20,10 +20,14 @@ class Header extends React.Component {
     this.setState({tweetButtonPushed: true});
   }
 
+  addNewTweet(newTweet) {
+    
+  }
+
   render() {
     let tweetForm = null;
     if(this.state.tweetButtonPushed) {
-      tweetForm = <TweetForm />;
+      tweetForm = <TweetForm onNewTweetCreation={this.addNewTweet}/>;
     }
     return (
       <div>
@@ -32,7 +36,7 @@ class Header extends React.Component {
           <Notifications />
           <Messages />
           <Searchbar />
-          <TweetButton onTweetButtonPush={this.handleTweetButtonPush}/>
+          <TweetButton onTweetButtonPush={this.handleTweetButtonPush} />
         </div>
         <div>
           {tweetForm}
