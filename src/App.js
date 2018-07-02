@@ -40,8 +40,8 @@ class App extends Component {
   pushTweetToList(newTweet) {
     let newTweetBlock =
     {
-      "userName" : "Schmerald",
-      "img" : girl2,
+      "userName" : this.state.username,
+      "img" : this.state.img,
       "tweetText" : newTweet
     }
     var newMasterTweetList = this.state.masterTweetList.slice();
