@@ -3,7 +3,7 @@ import React from "react";
 function RightBar(){
   return (
     <div className="right-bar">
-      <p>Right Bar</p>
+      <p>Some things might go here in the future</p>
     </div>
   );
 }

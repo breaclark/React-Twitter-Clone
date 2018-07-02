@@ -17,11 +17,36 @@ class TweetForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="tweet-form">
+        <style>{`
+          .tweet-form {
+            background-color: #86e5fb;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            padding: 10px;
+            width: 100%;
+          }
+
+          input {
+            font-size: 16px;
+            height: 30px;
+            width: 200px;
+          }
+
+          button {
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            height: 30px;
+            margin-left: 20px;
+          }
+        `}</style>
         <form onSubmit={this.handleNewTweet}>
           <input
           id="tweet"
-          placeholder="What's on your mind"
+          placeholder="What's on your mind?"
           ref={(input) => {this._tweet = input;}}/>
           <button type="submit">Tweet!</button>
         </form>

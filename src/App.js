@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       username: "Brea B",
       img: girl,
-      tagline: "It's like ch-ch-ch-chia with a br",
+      tagline: "It's like ch-ch-ch-chia with a 'br'",
       about: "You have probably made a resume before, but likely it will need some updates to account for the coding skills you've recently learned.",
       masterTweetList: [
         {
@@ -51,7 +51,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header pushTweetUpToList={this.pushTweetToList}/>
         <MainContent
           username={this.state.username}

@@ -33,6 +33,15 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header">
+          <style>{`
+              .header {
+                background-color: #86e5fb;
+                border-bottom: 3px solid #bdedf9;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+              }
+          `}</style>
           <Home />
           <Notifications />
           <Messages />
